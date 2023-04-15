@@ -4,6 +4,25 @@ Anyway, it's not a good code since only file from your local folder can be encry
 
 first thing to do is to create a database named project.
 then create a table named users with user_id (primary key), username and password inside it (just make it varchar).
+Open phpMyAdmin and log in to your MySQL or MariaDB server.
+
+Click on the "Databases" tab in the top navigation menu.
+
+In the "Create database" section, enter "project" as the name of the new database and click the "Create" button.
+
+Once the "project" database is created, select it from the list of databases on the left-hand side of the screen.
+
+In the main panel, click on the "SQL" tab.
+
+In the "Run SQL query/queries on database project:" box, enter the following SQL code to create the "users" table:
+
+CREATE TABLE users (
+  user_id int(11) NOT NULL AUTO_INCREMENT,
+  username varchar(255) NOT NULL,
+  password varchar(255) NOT NULL,
+  PRIMARY KEY (user_id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+Click the "Go" button to execute the query and create the "users" table.
 
 then reqister with localhost/md5-file-aes-and-rc4-encrption-and-decription-with-simple-php/login.php
 that's all
